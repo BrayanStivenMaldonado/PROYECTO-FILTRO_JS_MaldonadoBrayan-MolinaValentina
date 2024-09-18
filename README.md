@@ -1,1 +1,3 @@
-# PROYECTO-FILTRO_JS_MaldonadoBrayan-MolinaValentina
+# SpaceX
+
+## Desarrollado por Brayan Maldonado y Valentina Molina

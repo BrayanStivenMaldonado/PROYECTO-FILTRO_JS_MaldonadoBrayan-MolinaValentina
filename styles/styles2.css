@@ -96,10 +96,18 @@ body{
     display: flex;
     justify-content: space-around;
 }
-.cajaB1{    
-    width: 7VW;
-    height: 13vh;
-    border: #0fdffa solid;
+.cajaB1 circle{
+    fill: none;
+    stroke: red;
+    stroke-width: 5;
+    stroke-dasharray: 91 100;
+    transform: rotate(-54deg);
+    transform-origin: 50%;
+}
+.cumplimiento .uno{
+    position: absolute;
+    top:7.5em;
+    left: 75vw;
 }
 .cajaB2{    
     width: 7VW;

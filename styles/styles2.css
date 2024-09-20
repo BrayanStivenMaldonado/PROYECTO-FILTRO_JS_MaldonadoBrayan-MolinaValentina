@@ -1,10 +1,11 @@
 body{
     margin: 0%;
     padding: 0%;
-    background: linear-gradient(130deg, #343549, rgba(255,0,0,0)50.71%),
-                linear-gradient(300deg, #404790, rgba(0,255,0,0) 70.71%),
-                linear-gradient(100deg, #61648D, rgba(0,0,255,0) 70.71%),
-                linear-gradient(230deg, #69AEFF, rgba(0,255,0,0) 70.71%);
+    background-color: black;
+    background: linear-gradient(130deg, #141527, rgba(0, 0, 0, 0)110.71%),
+                linear-gradient(140deg, #0b0e2c, rgba(23, 29, 23, 0) 80.71%),
+                linear-gradient(110deg, #2a2d44b7, rgba(0, 0, 0, 0) 80.71%),
+                linear-gradient(300deg, #000000, rgba(17, 22, 17, 0) 80.71%);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -96,18 +97,45 @@ body{
     display: flex;
     justify-content: space-around;
 }
-.cajaB1 circle{
-    fill: none;
-    stroke: red;
-    stroke-width: 5;
-    stroke-dasharray: 91 100;
+.cajaB1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7VW;
+    height: 13vh;
+    background-color: #55587e65;
+    border-radius: 10px;
+}
+.circulo1{
+    width: 4.7vw;
+    height: 9.3vh;
+    border-radius: 50px;
+    overflow: hidden;
+}
+svg {
+    margin-top: -1.4vw;
+    margin-left: -9.8vh;
+    border: solid;
+}
+circle{
+    fill:rgba(255, 255, 255, 0.288);
+    stroke:#287be0;
+    stroke-width: 13;
+    stroke-dasharray: 10 100;
     transform: rotate(-54deg);
     transform-origin: 50%;
 }
-.cumplimiento .uno{
-    position: absolute;
-    top:7.5em;
-    left: 75vw;
+.circulo2{
+    width: 4.2vw;
+    height: 8.3vh;
+    margin-top: -5.8vw;
+    margin-left: 0.2vw;
+    border-radius: 50px;
+    background-color: #141636;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 .cajaB2{    
     width: 7VW;

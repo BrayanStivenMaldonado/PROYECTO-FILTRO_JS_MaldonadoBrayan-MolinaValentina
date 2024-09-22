@@ -72,6 +72,9 @@ img{
     margin-left: 25%;
 }
 
+a{
+  text-decoration: none;
+}
 
 .cta {
     font-family: Roboto-Bold;

@@ -5,33 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capsules</title>
     <link rel="stylesheet" href="styles/capsules.css">
+    <link rel="icon" href="storage/SpaceX.png" type="image/x-icon" />
 </head>
 <body>
     <div class="contenido">
-
-        <div class="load">
+        <div class="izq">
+            
         </div>
+        <div class="med">
+            <div class="imgBox">
+            </div>
+        </div>
+
+        <div class="der">
+            
+        </div>
+
+        <!-- <div class="load">
+        </div> -->  
         
     </div>
     <div class="Pie">    
         <div class="icons">
+            <a href="./index2.html">
+                <div class="image">
+                    <img src="storage/rocket.svg" alt="">
+                    <p>Rockets</p>
+                </div>
+            </a>
             <div id="Selected" class="image">
-                <img src="storage/rocket.svg" alt="">
-                <p>Rockets</p>
-            </div>
-            <div class="image">
                 <img src="storage/capsule.svg" alt="">
                 <p>Capsules</p>
             </div>
             <div class="image">
-                <img src="storage/capsule.svg" alt="">
-                <p>Capsules</p>
+                <img src="storage/bxs-business.svg" alt="">
+                <p>Company</p>
             </div>
             <div class="image">
-                <img src="storage/capsule.svg" alt="">
-                <p>Capsules</p>
+                <img src="storage/bx-history.svg" alt="">
+                <p>History</p>
             </div>
         </div>
+    </div>
+    <div class="paginacion">
+        <button id="Prev" onclick="prev()"><</button>
+        <button id="num" data-id="1" onmouseover="change()">1</button>
+        <button id="num" data-id="2" onmouseover="change()">2</button>
+        <button id="num" data-id="3" onmouseover="change()">3</button>
+        <button id="num" data-id="4" onmouseover="change()">4</button>
+        <button id="Next" onclick="next()">></button>
     </div>
 </body>
 <script src="JS/capsules.js"></script>

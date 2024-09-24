@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
     background-color: black;
     background: linear-gradient(130deg, #141527, rgba(0, 0, 0, 0)110.71%),
                 linear-gradient(140deg, #0b0e2c, rgba(23, 29, 23, 0) 80.71%),
@@ -9,170 +10,258 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
     color: white;
-    display: flex;
     flex-direction: column;
 }
 /* ======================================================================================================================================================================================================================== */
 .contentSuper{
     display: grid;
-    
-}
-/* ======================================================================================================================================================================================================================== */
-.contentSuperA1{
-    display: flex;
-    justify-content:space-evenly;
-}
-/* ======================================================================================================================================================================================================================== */
-.contentIzq{
-    width: 15vw;
-    height: 80vh;
-    border: #343549 solid;
-    display: flex;
-}
-.estImg{
-    width: 5vw;
-    height: 80vh;
-    display: grid;
-    border: #343549 solid;
-}
-.estLet{
-    width: 10vw;
-    height: 80vh;
-    border: #343549 solid;
-}
-/* ======================================================================================================================================================================================================================== */
-.contentCen{
-    width: 60vw;
-    height: 80vh;
-    border: #343549 solid;
-    display: grid;
     justify-content: center;
 }
-/* ============================ */
+.tituloVehiculo{
+    height:8vh;
+    display:flex;
+    justify-content: center;
+}
+.contentMedio{
+    display: flex;
+    justify-content: space-around;
+}
+/* --------------------------------- */
+.contentIzq{
+    width: 16vw;
+    height: 80vh;
+    display: flex;
+    justify-content: end;
+}
+.estImg{
+    width: 1.5vw;
+    height: 79vh;
+    display: grid;
+    align-items: center;
+}
+.estLet{
+    width: 13vw;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+}
+.letraEst1,.letraEst2,.letraEst3,.letraEst4,.letraEst5,.letraEst6,.letraEst7{
 
+    font-size: 20px;
+}
+.estado1,.estado2,.estado3,.estado4,.estado5,.estado6,.estado7{
+    font-size: 14px;
+}
+
+.estLet p{
+    width: 10vw;
+    height: 1vh;
+}
+/* --------------------------------- */
+.contentCen{
+    width: 60vw;
+    display:grid;
+    justify-content: center;
+}
+.porcentajesSuper{
+    width: 60vw;
+    height: 34vh;
+    display: grid;   
+}
 .parcentaje1{
-    width: 34VW;
+    width: 60VW;
     height: 14vh;
-    border: #989edd solid;
     display: flex;
     justify-content: space-evenly;
 }
-.cajaA1{    
-    width: 7VW;
-    height: 13vh;
-    border: #989edd solid;
+.cajaA{    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8VW;
+    height: 15vh;
+    border-radius: 5px;
+    border: 1px solid #ffffff20;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px) saturate(120%);
 }
-.cajaA2{    
-    width: 7VW;
-    height: 13vh;
-    border: #989edd solid;
+.cajaA span{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cajaA3{    
-    width: 7VW;
-    height: 13vh;
-    border: #989edd solid;
+circle{
+    fill: none;
+    stroke-width: 10;
+    transform: rotate(90deg);
+    transform-origin: 50%;
+    stroke-dasharray: 100 100;
+    stroke: #989edd;
 }
-.cajaA4{    
-    width: 7VW;
-    height: 13vh;
-    border: #989edd solid;
+circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
+    stroke: #0280fe;
+    stroke-dasharray:var(--porcentaje) 100;
 }
-/* ============================ */
 .porcentaje2{
-    width: 54VW;
+    width: 60VW;
     height: 14vh;
-    border: #0fdffa solid;
     display: flex;
     justify-content: space-between;
 }
 .cajaIzq{
-    gap: 16px;
+    gap: 90px;
     display: flex;
     justify-content: space-around;
 }
 .cajaDer{
-    gap: 16px;
+    gap: 90px;
     display: flex;
     justify-content: space-around;
 }
-.cajaB1{
+.cajaB{
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 7VW;
-    height: 13vh;
-    background-color: #55587e65;
-    border-radius: 10px;
+    justify-content: center;
+    width: 8VW;
+    height: 15vh;
+    border-radius: 5px;
+    border: 1px solid #ffffff20;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px) saturate(120%);
 }
-.circulo1{
-    width: 4.7vw;
-    height: 9.3vh;
-    border-radius: 50px;
-    overflow: hidden;
-}
-svg {
-    margin-top: -1.4vw;
-    margin-left: -9.8vh;
-    border: solid;
+.cajaB span{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 circle{
-    fill:rgba(255, 255, 255, 0.288);
-    stroke:#287be0;
-    stroke-width: 13;
-    stroke-dasharray: 10 100;
-    transform: rotate(-54deg);
+    fill: none;
+    stroke-width: 10;
+    transform: rotate(90deg);
     transform-origin: 50%;
+    stroke-dasharray: 100 100;
+    stroke: #989edd;
 }
-.circulo2{
-    width: 4.2vw;
-    height: 8.3vh;
-    margin-top: -5.8vw;
-    margin-left: 0.2vw;
-    border-radius: 50px;
-    background-color: #141636;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
+    stroke:#0280fe;
+    stroke-dasharray:var(--porcentaje) 100;
 }
-.cajaB2{    
-    width: 7VW;
-    height: 13vh;
-    border: #0fdffa solid;
-}
-.cajaB3{    
-    width: 7VW;
-    height: 13vh;
-    border: #0fdffa solid;
-}
-.cajaB4{    
-    width: 7VW;
-    height: 13vh;
-    border: #0fdffa solid;
-}
-/* ============================ */
 .imgYConection{
     width: 50VW;
     height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
     border: #0fdffa solid;
 }
 .connections{
-    width: 12VW;
-    height: 20vh;
-    border: #0fdffa solid;
+    width: 15VW;
+    height: 35vh;
+    border-radius: 5px;
+    color:#9499c3;
 }
-/* ======================================================================================================================================================================================================================== */
+.dato1sConnctions{
+    display: flex;
+    gap: 33px;
+}
+.imagen{
+    width: 30vw;
+    height: 40vh;
+    background-color: #0280fe;
+}
+
+
+
+
 .contentDer{
+    position: relative;
     width: 15vw;
     height: 80vh;
-    border: #343549 solid;
-    display: flex;
+    padding: 0 20px;
 }
-/* ======================================================================================================================================================================================================================== */
-.contentInf{
-    width: 80vw;
-    height: 15vh;
-    border: #343549 solid;
+.contentDer .lineaPorcentaje{
+    margin: 15px 0;
+}
+.barraPorcen{
+    display: flex;
+    justify-content: space-evenly;
+}
+.barraPorcen p{
+    margin-top: 0px;    
+}
+.contentDer .lineaPorcentaje .barra{
+    position: relative;
+    width: 70%;
+    height: 6px;
+    background: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.contentDer .lineaPorcentaje .barra::before{
+    content: '';
+    position: absolute;
+    width: var(--barra);
+    height: 100%;
+    background: #0280fe;
+}
+
+
+
+
+.contentInf {
+    display: flex;
+    background-color: #141c30;
+    width: 40%;
+    height: 5vw;
+    margin-left: 30%;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    justify-content: center;
+}
+.icons {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    color: rgb(189, 189, 189);
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.image img {
+    width: 3vw;
+}
+  
+.image p {
+    margin: 0;
+    font-size: 1.2vw;
+    font-family: Roboto-Bold;
+}
+  
+#Selected p {
+    border-bottom: 2px solid white;
+    color: white;
+}
+.stylesFinal{
+    background-color: #141c30;
+    width: 100vw;
+    height: 2vh;
+    margin-top: -0.5vw;
 }

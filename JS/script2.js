@@ -22,7 +22,7 @@ fetch(api)
     fetch("https://api.spacexdata.com/v4/rockets/"+rockets[0].id)
     .then(res=>res.json())
     .then(busca =>{
-        console.log(busca);
+        console.log(busca.flickr_images[1]);
         titulo.innerHTML=`
         <h3>VEHICLE OVERVIEW</h3>
         `
@@ -161,7 +161,7 @@ fetch(api)
                             </div>
                         </div>
                         <div class="imagen">
-                            <img class="imagenRock" src="${busca.flickr_images[0]}">
+                            <img class="imagenRock" src="https://i.imgur.com/azYafd8.jpeg">
                         </div>
                         `
         contentDer.innerHTML=`

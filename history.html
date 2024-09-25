@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="./styles/history.css">
+    <link rel="icon" href="storage/SpaceX.png" type="image/x-icon"/>
+
+</head>
+<body>
+    <div class="contentSuper">
+        
+        <div class="contentCentro">
+            <div class="imagenes">
+                <div class="titulo"><h2>History</h2></div>
+                <img src="" alt="">
+            </div>
+            <div class="informacion">
+                <div class="datos">
+                    <p class="nombre">title</p>
+                    <p class="fecha_del_evento_utc">fecha1</p>
+                    <p class="fecha_del_evento_unix">fecha2</p>
+                    <p class="identifi">ID</p>
+                </div>
+                <div class="detalles">
+                    <p>detalles</p>
+                    <a href="">articulo extra de evento</a></div>
+            </div>
+        </div>
+       
+        <div class="finalInferior">
+            <div class="contentInf">    
+                <div class="icons">
+                    <div id="Selected" class="image">
+                        <img src="storage/rocket.svg" alt="">
+                        <p>Rockets</p>
+                    </div>
+                    <div class="image">
+                        <img src="storage/capsule.svg" alt="">
+                        <p>Capsules</p>
+                    </div>
+                    <div class="image">
+                        <img src="storage/capsule.svg" alt="">
+                        <p>Capsules</p>
+                    </div>
+                    <div class="image">
+                        <img src="storage/capsule.svg" alt="">
+                        <p>Capsules</p>
+                    </div>                
+                </div>
+            </div>
+            <div class="stylesFinal"></div>
+            <div class="paginacion">
+                <button class="btn_" id="Prev" onclick="prev()"><</button>
+                <button id="num" data-id="1" onmouseover="change()">1</button>
+                <button id="num" data-id="2" onmouseover="change()">2</button>
+                <button id="num" data-id="3" onmouseover="change()">3</button>
+                <button id="num" data-id="4" onmouseover="change()">4</button>
+                <button class="btn_1" id="Next" onclick="next()">></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS/history.js"></script>
+</html>

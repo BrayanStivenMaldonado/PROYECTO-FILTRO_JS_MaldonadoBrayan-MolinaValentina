@@ -12,12 +12,9 @@ body{
     width: 100vw;
     color: white;
     flex-direction: column;
+    overflow: hidden;
 }
 /* ======================================================================================================================================================================================================================== */
-.contentSuper{
-    display: grid;
-    justify-content: center;
-}
 .tituloVehiculo{
     height:8vh;
     display:flex;
@@ -289,6 +286,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     width: 40%;
     height: 6vw;
     margin-left: 30%;
+    margin-top: -0.6vw;
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
     justify-content: center;
 }

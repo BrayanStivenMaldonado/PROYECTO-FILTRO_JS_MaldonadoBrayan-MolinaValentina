@@ -6,6 +6,7 @@ const porcentajesSuper=document.querySelector('.porcentajesSuper')
 const imgYConection=document.querySelector('.imgYConection')
 const contentDer=document.querySelector('.contentDer')
 const finalInferior=document.querySelector('.finalInferior')
+const SuperRespon=document.querySelector('.SuperRespon')
 
 
 fetch(api)
@@ -23,7 +24,7 @@ fetch(api)
     .then(busca =>{
         console.log(busca);
         titulo.innerHTML=`
-        <h3>VEHICLE OVERVIEW / ${rockets[0].name}</h3>
+        <h3>VEHICLE OVERVIEW</h3>
         `
         contentIzq.innerHTML=`
                     <div class="estImg">
@@ -48,6 +49,32 @@ fetch(api)
                     </div>
                     
                     `
+        SuperRespon.innerHTML=`                    <div class="bloqueRespo1">
+
+                        <div class="estImgRespon">
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+
+                        </div>
+                        <div class="estLetRespon">
+                            <div class="letraEstR1"><span>Name</span><div class="estado2"><span>${busca.name}</span></div></div>
+                            <div class="letraEstR2"><span>Company</span><div class="estado2"><span>${busca.company}</span></div></div>
+                            <div class="letraEstR3"><span>Country</span><div class="estado2"><span> ${busca.country}</span></div></div>      
+                        </div>
+                    </div>
+                    <div class="bloqueRespo2">
+                        <div class="estImgRespon">
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+                            <i class='bx bxs-check-circle' style='color:#ffffff'></i>
+                        </div>
+                        <div class="estLetRespon">
+                            <div class="letraEstR4"><span>Type</span><div class="estado2"><span> ${busca.type}</span></div></div>               
+                            <div class="letraEstR5"><span>Version legs</span><div class="estado2"><span> ${busca.version}</span></div></div>
+                            <div class="letraEstR7"><span>First_flight</span><div class="estado2"><span> ${busca.first_flight}</span></div></div>
+                        </div>
+                    </div>`
         porcentajesSuper.innerHTML=`
                         <div class="parcentaje1">
                             <div class="cajaA" style="--porcentaje:${busca.height.feet}">
@@ -134,7 +161,7 @@ fetch(api)
                             </div>
                         </div>
                         <div class="imagen">
-                            <img src="" alt="">
+                            <img class="imagenRock" src="${busca.flickr_images[0]}">
                         </div>
                         `
         contentDer.innerHTML=`

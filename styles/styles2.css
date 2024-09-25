@@ -46,6 +46,10 @@ body{
     display: grid;
     align-items: center;
 }
+.estLet p{
+    width: 10vw;
+    height: 1vh;
+}
 .letraEst1,.letraEst2,.letraEst3,.letraEst4,.letraEst5,.letraEst6,.letraEst7{
 
     font-size: 20px;
@@ -54,10 +58,6 @@ body{
     font-size: 14px;
 }
 
-.estLet p{
-    width: 10vw;
-    height: 1vh;
-}
 .paginacion {
     position: absolute;
     margin-top: -7vw;
@@ -99,6 +99,30 @@ body{
     display:grid;
     justify-content: center;
 }
+/* Inicio stylos del responsive =====================================================*/
+.SuperRespon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 15vh;
+    display: none;
+}
+.bloqueRespo1{
+    display: flex;
+    gap: 5px;
+
+}
+.bloqueRespo2{
+    display: flex;
+    gap: 5px;
+}
+.estImgRespon, .estLetRespon{
+    display: grid;
+    gap: 8px;
+}
+/* Fin stylos del responsive =====================================================*/
+
 .porcentajesSuper{
     width: 60vw;
     height: 34vh;
@@ -196,10 +220,9 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
 }
 .imgYConection{
     width: 50VW;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     justify-content: space-evenly;
-    border: #0fdffa solid;
 }
 .connections{
     width: 15VW;
@@ -213,8 +236,12 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
 }
 .imagen{
     width: 30vw;
-    height: 40vh;
-    background-color: #0280fe;
+    height: 35vh;
+    border: solid red;
+}
+.imagenRock{
+    width: 30vw;
+    height: 35vh;
 }
 
 
@@ -260,7 +287,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     display: flex;
     background-color: #141c30;
     width: 40%;
-    height: 5vw;
+    height: 6vw;
     margin-left: 30%;
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
     justify-content: center;
@@ -299,4 +326,99 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     width: 100vw;
     height: 2vh;
     margin-top: -0.5vw;
+}
+@media only screen and (max-width:768px)
+{
+    .contentDer{
+        display: none;
+    }
+    .contentMedio{
+        display: flex;
+    }
+    .contentIzq{
+        display: none;
+    }
+    .contentCen{
+        gap: 0px;
+    }
+    .SuperRespon{
+        display: flex;
+        border-radius: 5px;
+        border: 1px solid #ffffff20;
+        background: #ffffff1a;
+        backdrop-filter: blur(10px) saturate(120%);
+    }
+
+    .parcentaje1{
+        display: none;
+    }
+    .porcentaje2{
+        display:flex;
+        margin-left: 10vw;
+        margin-top: 5vw;
+    }
+    .cajaIzq,.cajaDer{
+        display: grid;
+    }
+    .cajaB{
+        width: 25vw;
+        height: 12vh;
+        margin-bottom: -40px;
+    }
+    .imgYConection{
+        width: 60vw;
+        height: 20vh;
+        display: grid;
+        justify-content: start;
+        border: solid yellow;
+        margin-left: 10vw;
+    }
+    .connections{
+        display: none;
+    }
+    .imagen{
+        width: 60vw;
+        height: 20vh;
+    }
+    .imagenRock{
+        width: 60vw;
+        height: 20vh;
+    }
+    .contentInf{
+        width: 90vw;
+        height:6vh;
+        margin-left: 6vw;
+        margin-top: 32vw;
+    }
+    .image{
+        margin-top: 1vw;
+    }
+    .image img {
+        width: 8vw;
+    }
+    .image p {
+        margin: 0;
+        font-size:4vw;
+        font-family: Roboto-Bold;
+    }
+    .paginacion{
+        margin-top: -40vw;
+        margin-left: 36vw;
+        width: 35vw;
+        height: 6vh;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 8vw;
+    }
+    .paginacion button{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        font-family: Roboto-Bold;
+        font-size: 6vw;
+        border: none;
+    }
 }

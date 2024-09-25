@@ -1,0 +1,266 @@
+@import url(./variables.css);
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../storage/font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../storage/font/Roboto/Roboto-Light.ttf);
+}
+
+body {
+  background-color: black;
+  background: linear-gradient(130deg, #141527, rgba(0, 0, 0, 0) 110.71%),
+    linear-gradient(140deg, #0b0e2c, rgba(23, 29, 23, 0) 80.71%),
+    linear-gradient(110deg, #131524b7, rgba(0, 0, 0, 0) 80.71%),
+    linear-gradient(300deg, #000000, rgba(17, 22, 17, 0) 80.71%);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-family: Roboto-Regular;
+  margin: 0;
+  padding: 0;
+  animation: fondo-anim 10s infinite alternate;
+}
+
+@keyframes fondo-anim{
+  0%{background-position: left;}
+  100%{background-position: right;}
+}
+
+#Logo{
+    position: absolute;
+    width: 20vw;
+    margin-top: -4vw;
+}
+
+.Contenido{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.ordenar{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+  width: 100%;
+  height: 12vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Empresa{
+  border-radius: 2vw;
+  width: 40vw;
+  height: 100%;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.address p{
+  margin-left: 2vw;
+  font-size: 1vw;
+  font-family: Roboto-Bold;
+}
+
+.address span{
+  font-family: Roboto-Regular;
+  font-size: 0.9vw;
+}
+
+.address svg{
+  position: absolute;
+  margin-top: -0.2vw;
+  margin-left: -1.6vw;
+}
+
+.Empresa img{
+  width: 20vw;
+  height: 15vw;
+  border-radius: 15px;
+  margin-top: 5vw;
+}
+
+.address{
+  
+  width: 12vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Info{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: -0.1vw;
+  width: 25vw;
+  height: 10vw;
+  
+}
+
+.Info p{
+  margin-left: 2vw;
+  font-size: 1vw;
+  font-family: Roboto-Bold;
+}
+
+.Info span{
+  font-family: Roboto-Regular;
+  font-size: 0.9vw;
+}
+
+.History{
+  width: 100%;
+}
+
+.History h1{ 
+  margin-left: 2vw;
+}
+
+.History p{
+  margin-left: 2vw;
+  font-size: 1vw;
+  font-family: Roboto-Bold;
+}
+
+.History span{
+  font-family: Roboto-Regular;
+  font-size: 0.9vw;
+}
+
+.General{
+  margin-top: 3vw;
+  border-radius: 2vw;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.General h1{
+  font-family: Roboto-Bold;
+  font-size: 2vw;
+}
+.General img{
+  width: 20%;
+  height: 20vw;
+}
+
+section{
+  display: flex;
+  width: 80%;
+  height: 20vw;
+}
+
+section img{
+  width: 33.33%;
+  height: 100%;
+  border-radius: 15px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: 1s;
+  padding: 0.1vw;
+}
+
+section img:hover{
+  transition: 1s;
+  cursor: crosshair;
+  width: 35%;
+  opacity: 1;
+  filter: contrast(80%);
+}
+
+.Featured{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Featured p{
+  margin-left: 2vw;
+  font-size: 1vw;
+  font-family: Roboto-Bold;
+}
+
+.Featured span{
+  font-family: Roboto-Regular;
+  font-size: 0.9vw;
+}
+
+#Tom{
+  padding-right: 1vw;
+}
+
+.Social{
+  margin-top: 2vw;
+  border: 1px solid green;
+  width: 100%;
+  height: 7vw;
+}
+
+.inf{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.Pie {
+    display: flex;
+    background-color: #141c30;
+    width: 40%;
+    height: 100%;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+
+  }
+  
+  .icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  
+  .image {
+    display: flex;
+    flex-direction: column;
+    color: rgb(189, 189, 189);
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .image img {
+    width: 3vw;
+  }
+  
+  .image p {
+    margin: 0;
+    font-size: 1.2vw;
+    font-family: Roboto-Bold;
+  }
+  
+  #Selected p {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  a{
+  text-decoration: none;
+}

@@ -272,3 +272,274 @@ section img:hover{
   a{
   text-decoration: none;
 }
+
+@media (max-width: 480px) {
+  body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #Logo{
+    position: absolute;
+    width: 40vw;
+    margin-top: -6vw;
+}
+
+.Contenido{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ordenar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80vw;
+}
+
+.Empresa{
+  border-radius: 2vw;
+  width: 100%;
+  height: 60vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.address{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10vw;
+}
+
+.address p{
+  margin-left: 2vw;
+  font-size: 4vw;
+  font-family: Roboto-Bold;
+}
+
+.address span{
+  font-family: Roboto-Regular;
+  font-size: 3.7vw;
+}
+
+.address svg{
+  position: absolute;
+  margin-top: -0.2vw;
+  margin-left: -6vw;
+  width: 5vw;
+  height: 5vw;
+}
+
+.Empresa img{
+  width: 80%;
+  height: 40vw;
+  border-radius: 15px;
+  margin-top: 14vw;
+}
+
+.Info{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 15vw;
+  width: 100%;
+  height: 40vw;
+  
+}
+
+/* #state{
+  position: absolute;
+  margin-top: 15vw;
+  margin-left: 30vw;
+} */
+
+.Info p{
+  margin-left: 2vw;
+  font-size: 4vw;
+  font-family: Roboto-Bold;
+}
+
+.Info span{
+  font-family: Roboto-Regular;
+  font-size: 3.7vw;
+}
+
+.History{
+  width: 90%;
+}
+
+.History h1{ 
+margin-left: 3vw;
+}
+
+.History p{
+  margin-left: 2vw;
+  font-size: 4vw;
+  font-family: Roboto-Bold;
+}
+
+.History span{
+  font-family: Roboto-Regular;
+  font-size: 3.7vw;
+}
+
+.General{
+  margin-top: 100vw;
+  border-radius: 2vw;
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.General h1{
+  font-family: Roboto-Bold;
+  font-size: 8vw;
+}
+.General img{
+  width: 20%;
+  height: 20vw;
+}
+
+section{
+  display: flex;
+  width: 100%;
+  height: 80vw;
+}
+
+section img{
+  width: 33.33%;
+  height: 100%;
+  border-radius: 15px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: 1s;
+  padding: 0.1vw;
+}
+
+section img:hover{
+  transition: 1s;
+  cursor: crosshair;
+  width: 35%;
+  opacity: 1;
+  filter: contrast(80%);
+}
+
+.Featured{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.Featured p{
+  margin-left: 2vw;
+  font-size: 4vw;
+  font-family: Roboto-Bold;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 8vw;
+}
+
+.Featured span{
+  font-family: Roboto-Regular;
+  font-size: 3.7vw;
+}
+
+#Mujer{
+  margin-left: -1vw;
+}
+
+#Elon{
+  margin-left: 8vw;
+}
+
+#Tom{
+  margin-left: 4vw;
+}
+
+.Social{
+  margin-top: 8vw;
+  width: 100%;
+  height: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Social img{
+  width: 8vw;
+  height: 8vw;
+  margin-top: 5vw;
+}
+
+.inf{
+    margin-top: 50vw;
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+}
+
+.Pie {
+    display: flex;
+    background-color: #141c30;
+    width: 100%;
+    height: 100%;
+    clip-path: none;
+
+  }
+  
+  .icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  
+  .image {
+    display: flex;
+    flex-direction: column;
+    color: rgb(189, 189, 189);
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .image img {
+    width: 8vw;
+  }
+  
+  .image p {
+    margin: 0;
+    font-size: 3vw;
+    font-family: Roboto-Bold;
+  }
+  
+  #Selected p {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  .image svg{
+    width: 8vw;
+    height: 8vw;
+  }
+
+  a{
+  text-decoration: none;
+}
+}

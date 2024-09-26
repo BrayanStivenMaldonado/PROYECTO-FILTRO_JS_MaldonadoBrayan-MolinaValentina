@@ -205,9 +205,17 @@ section img:hover{
 
 .Social{
   margin-top: 2vw;
-  border: 1px solid green;
-  width: 100%;
+  width: 50%;
   height: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Social img{
+  width: 2vw;
+  height: 2vw;
+  margin-top: 1.5vw;
 }
 
 .inf{

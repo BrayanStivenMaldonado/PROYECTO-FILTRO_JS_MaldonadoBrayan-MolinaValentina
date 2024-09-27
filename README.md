@@ -30,8 +30,8 @@ Dicho esto, el equipo de diseño UI/UX, al igual que el equipo de sistemas, dise
 
 ### Estructura de archivos
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](./storage/image.png)
+![alt text](./storage/image-1.png)
 
 
 ### API Utilizada

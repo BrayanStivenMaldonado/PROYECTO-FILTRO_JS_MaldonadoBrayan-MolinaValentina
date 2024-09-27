@@ -62,7 +62,7 @@ fetch(api)
     .then(historiales => {
 
         contentCentro.innerHTML=`
-            <div class="titulo"><h2>History</h2></div>
+        <div class="titulo"><h2>History</h2></div>
             <div class="contentDDos">
                 <div class="informacion">
                     <div class="datos">
@@ -81,6 +81,7 @@ fetch(api)
                     <img src="${imagenes[count]}" alt="">
                 </div>
             </div>
+        </div>
             `
         pagMenu.innerHTML=`            
             <div class="Pie">    

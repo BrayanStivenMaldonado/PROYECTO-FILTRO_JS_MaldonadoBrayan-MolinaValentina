@@ -67,9 +67,7 @@ a{
 .informacion span{
     font-size: 20px;
     font-family: Roboto-Bold;
-    
 }
-
 .informacion p{
     font-family: Roboto-Regular;
 }
@@ -78,7 +76,7 @@ a{
     height: 25vh;
     flex-direction: column;
     display: flex;
-    gap: 10px;
+    gap: 85px;
 }
 .nombre, .Identificador, .fecha_del_evento_utc, .fecha_del_evento_unix{
     width: 80vw;
@@ -86,8 +84,9 @@ a{
 }
 .detalles{
     width: 38vw;
-    height: 20vh;
-    margin-left: 12px;
+    height: 5vh;
+    margin-left: 11px;
+    margin-top: 8vw;
 }
 .articulo a{
     display: flex;
@@ -138,7 +137,7 @@ background-color: #141c30;
 width: 40%;
 height: 5vw;
 margin-left: 30%;
-margin-top: -0.7vw;
+margin-top:3vw;
 clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 justify-content: center;
 }

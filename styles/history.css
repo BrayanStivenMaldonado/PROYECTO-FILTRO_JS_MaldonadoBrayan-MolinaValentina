@@ -1,8 +1,16 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../storage/font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../storage/font/Roboto/Roboto-Light.ttf);
+}
 body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-size: 100vw 100vh;
+    background-size: 97vw 100vh;
     background-image: url(../storage/galaxy-3468.gif);
     color: white;
 }
@@ -12,29 +20,55 @@ body{
     gap: 100px;
 }
 .contentCentro{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-evenly;
 }
 .titulo{
+    height: 11vh;
     display: flex;
     justify-content: center;
 }
+.titulo h2{
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: Roboto-Bold;
+}
+.contentDDos{
+    width: 100vw;
+    height:61.5vh;
+    display: flex;
+    justify-content: space-around;
+}
 .imagenes img{
     width: 40vw;
-    height: 70vh;
+    height: 60vh;
     border-radius: 5px;
     border: 1px solid #ffffff20;
     background: #ffffff1a;
     backdrop-filter: blur(10px) saturate(120%);
 }
+
 .informacion{
+    width: 40vw;
+    height: 60vh;
     display: grid;
-    justify-content: center;
+    gap: 100px;
     border-radius: 5px;
     border: 1px solid #ffffff20;
     background: #ffffff1a;
-    backdrop-filter: blur(10px) saturate(120%);}
+    backdrop-filter: blur(10px) saturate(120%);
+}
+
+.informacion span{
+    font-size: 20px;
+    font-family: Roboto-Bold;
+    
+}
+
+.informacion p{
+    font-family: Roboto-Regular;
+}
 .datos{
     width: 38vw;
     height: 25vh;
@@ -42,30 +76,36 @@ body{
     display: flex;
     gap: 10px;
 }
+.nombre, .Identificador, .fecha_del_evento_utc, .fecha_del_evento_unix{
+    width: 80vw;
+    margin-left: 12px;
+}
 .detalles{
     width: 38vw;
+    height: 20vh;
+    margin-left: 12px;
 }
-.pieInformacion{
-    width: 38vw;
-    background-color: rgb(236, 178, 89);
+.articulo a{
+    display: flex;
+    text-decoration: none;
+    color: #e72d2d;
+    justify-content: end;
 }
 
 
 .paginacion {
-    position: absolute;
-    margin-top: -7vw;
-    margin-left: 80vw;
-    width: 15vw;
     height: 7vh;
+    margin-left: 80%;
+    margin-top: -15vh;
+    position: absolute;
     display: flex;
     align-items: center;
     color: black;
-    background-color: #000000;
-    border: 0.5px solid white;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px) saturate(120%);
     border-radius: 2vw;
     overflow: hidden;
 }
-  
 .paginacion button{
     width: 2.4vw;
     height: 100%;
@@ -79,55 +119,135 @@ body{
     font-size: 1.5vw;
     border: none;
 }
-  
 button:hover{
     background-color: aliceblue;
     color: black;
     cursor: pointer;
     transition: 0.3s;
 }
-.contentInf {
-    display: flex;
-    background-color: #141c30;
-    width: 40%;
-    height: 6vw;
-    margin-left: 30%;
-    margin-top: -0.6vw;
-    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-    justify-content: center;
+
+
+
+.Pie {
+display: flex;
+background-color: #141c30;
+width: 40%;
+height: 5vw;
+margin-left: 30%;
+margin-top: -0.7vw;
+clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+justify-content: center;
 }
+  
 .icons {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
+width: 90%;
+display: flex;
+justify-content: space-around;
 }
+
 .image {
-    display: flex;
-    flex-direction: column;
-    color: rgb(189, 189, 189);
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+display: flex;
+flex-direction: column;
+color: rgb(189, 189, 189);
+height: 90%;
+justify-content: center;
+align-items: center;
+cursor: pointer;
 }
-  
+
 .image img {
-    width: 3vw;
+width: 3vw;
 }
-  
+
 .image p {
-    margin: 0;
-    font-size: 1.2vw;
-    font-family: Roboto-Bold;
+margin: 0;
+font-size: 1.2vw;
+font-family: Roboto-Bold;
 }
-  
+
 #Selected p {
-    border-bottom: 2px solid white;
-    color: white;
+border-bottom: 2px solid white;
+color: white;
 }
 .stylesFinal{
     background-color: #141c30;
     width: 100vw;
     height: 2vh;
     margin-top: -0.5vw;
+}
+
+@media only screen and (max-width:430px)
+{
+    .titulo{
+        margin-top: 10vw;
+    }
+    .contentDDos{
+        display:grid;
+    }
+    .informacion{
+        width: 85vw;
+        height: 25vh;
+        display: grid;
+        gap: 180px;
+        border-radius: 5px;
+        border: 1px solid #ffffff20;
+        background: #ffffff1a;
+        backdrop-filter: blur(10px) saturate(120%);
+    }
+    .imagenes img{
+        width: 86vw;
+        height: 55vw;
+        margin-top: 10px;
+    }
+    .datos{
+        width: 38vw;
+        height: 25vh;
+        flex-direction: column;
+        display: flex;
+        gap: 1px;
+    }
+    .nombre, .Identificador, .fecha_del_evento_utc, .fecha_del_evento_unix{
+        width: 80vw;
+        margin-left: 12px;
+    }
+    .detalles{
+        display: none;
+    }
+    .paginacion {
+        margin-top: -40vw;
+        margin-left: 36vw;
+        width: 35vw;
+        height: 6vh;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 8vw;    
+    }
+    .paginacion button{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        color: white;
+        font-family: Roboto-Bold;
+        font-size: 6vw;
+        border: none;
+    }
+    .Pie {
+        width: 90vw;
+        height:6vh;
+        margin-left: 6vw;
+        margin-top: 9vw;
+    }
+    .image{
+        margin-top: 1vw;
+    }
+    .image img {
+        width: 8vw;
+    }
+    .image p {
+        margin: 0;
+        font-size:4vw;
+        font-family: Roboto-Bold;
+    }
 }

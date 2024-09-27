@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../storage/font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../storage/font/Roboto/Roboto-Light.ttf);
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -19,6 +27,8 @@ body{
     height:8vh;
     display:flex;
     justify-content: center;
+    font-family: Roboto-Bold;
+
 }
 .contentMedio{
     display: flex;
@@ -42,6 +52,10 @@ body{
     height: 80vh;
     display: grid;
     align-items: center;
+    font-family: Roboto-Regular;
+}
+.letraEstA1{
+    font-family: Roboto-Regular;
 }
 .estLet p{
     width: 10vw;
@@ -57,15 +71,15 @@ body{
 
 .paginacion {
     position: absolute;
-    margin-top: -7vw;
+    margin-top: -6vw;
     margin-left: 80vw;
     width: 15vw;
     height: 7vh;
     display: flex;
     align-items: center;
     color: black;
-    background-color: #000000;
-    border: 0.5px solid white;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px) saturate(120%);
     border-radius: 2vw;
     overflow: hidden;
   }
@@ -136,8 +150,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8VW;
-    height: 15vh;
+    font-family: Roboto-Regular;
+    width: 7VW;
+    height: 13vh;
     border-radius: 5px;
     border: 1px solid #ffffff20;
     background: #ffffff1a;
@@ -186,8 +201,9 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8VW;
-    height: 15vh;
+    font-family: Roboto-Regular;
+    width: 7VW;
+    height: 13vh;
     border-radius: 5px;
     border: 1px solid #ffffff20;
     background: #ffffff1a;
@@ -219,7 +235,9 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     width: 50VW;
     height: 35vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    font-family: Roboto-Regular;
 }
 .connections{
     width: 15VW;
@@ -230,15 +248,52 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
 .dato1sConnctions{
     display: flex;
     gap: 33px;
+    margin-left: -7vw;
+
 }
+HR{
+    margin-left: -7vw;
+    width: 12vw;
+}
+.bloque1Conex{
+    margin-left: -7vw;
+}
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 10px;
+    z-index: 2;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: var(--color--five);
+  }
+  
+  *::-webkit-scrollbar-track:hover,
+  *::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border: 1px solid var(--color--five);
+    background-color: var(--color--one--rgba);
+    border-radius: 2vw
+  }
 .imagen{
-    width: 30vw;
-    height: 35vh;
-    border: solid red;
+    width: 20vw;
+    height: 30vh;
+    margin-left: 13vw;
+    margin-top: -10vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
 }
 .imagenRock{
-    width: 30vw;
-    height: 35vh;
+    width: 100%;
+    height: 90%;
+    padding: 0.3vw;
+    border-radius: 1VW;
+
 }
 
 
@@ -251,7 +306,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     padding: 0 20px;
 }
 .contentDer .lineaPorcentaje{
-    margin: 15px 0;
+    margin: 50px 0;
 }
 .barraPorcen{
     display: flex;
@@ -259,6 +314,11 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
 }
 .barraPorcen p{
     margin-top: 0px;    
+    
+}
+.lineaPorcentaje span{
+    font-family: Roboto-Regular;
+
 }
 .contentDer .lineaPorcentaje .barra{
     position: relative;
@@ -286,7 +346,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     width: 40%;
     height: 6vw;
     margin-left: 30%;
-    margin-top: -0.6vw;
+    margin-top: 0.2vw;
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
     justify-content: center;
 }
@@ -325,7 +385,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
     height: 2vh;
     margin-top: -0.5vw;
 }
-@media only screen and (max-width:768px)
+@media only screen and (max-width:430px)
 {
     .contentDer{
         display: none;
@@ -364,29 +424,66 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
         margin-bottom: -40px;
     }
     .imgYConection{
-        width: 60vw;
-        height: 20vh;
-        display: grid;
+        width: 50VW;
+        height: 40vh;
+        margin-left: 3vw;
+        display: flex;
         justify-content: start;
-        border: solid yellow;
-        margin-left: 10vw;
+        font-family: Roboto-Regular;
     }
     .connections{
+        width: 15VW;
+        height: 35vh;
+        border-radius: 5px;
+        color:#9499c3;
+    }
+    .dato1sConnctions{
+        display:none;
+    }
+    HR{
         display: none;
     }
+    .bloque1Conex{
+        display: none;
+    }
+    *::-webkit-scrollbar {
+        height: 12px;
+        width: 10px;
+        z-index: 2;
+      }
+      *::-webkit-scrollbar-track {
+        background-color: var(--color--five);
+      }
+      *::-webkit-scrollbar-track:hover,
+      *::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+      }
+      *::-webkit-scrollbar-thumb {
+        border: 1px solid var(--color--five);
+        background-color: var(--color--one--rgba);
+        border-radius: 2vw
+      }
     .imagen{
-        width: 60vw;
-        height: 20vh;
+        width: 65.1vw;
+        height: 26vh;
+        margin-left: 4vw;
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        border-radius: 1.5VW;
     }
     .imagenRock{
-        width: 60vw;
-        height: 20vh;
+        width: 100%;
+        height: 90%;
+        padding: 0.3vw;
+        border-radius: 1VW;
     }
     .contentInf{
         width: 90vw;
         height:6vh;
         margin-left: 6vw;
-        margin-top: 32vw;
+        margin-top:-11vw;
     }
     .image{
         margin-top: 1vw;
@@ -400,7 +497,7 @@ circle:nth-child(2){ /*el segundo circulo, es el que se ve por encima del anteri
         font-family: Roboto-Bold;
     }
     .paginacion{
-        margin-top: -40vw;
+        margin-top: -36vw;
         margin-left: 36vw;
         width: 35vw;
         height: 6vh;
